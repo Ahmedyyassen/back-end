@@ -25,7 +25,7 @@ const getQRcode = (req, res) => {
          if (!id) {
              return res.status(400).json({ error: 'Invalid link' });
          }
-         res.render("redirectPage", {id: id});
-}
+         res.status(200).json({ url : id })
+        }
 
 module.exports = { creatQRcode, getQRcode };

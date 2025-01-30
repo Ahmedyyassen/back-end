@@ -6,6 +6,6 @@ const router = express.Router();
 router.route('/').post(creatQRcode)
                 
 
-router.route('/:id').get(getQRcode)
+router.route('/redirect/:id').get(getQRcode)
 
 module.exports = router;
